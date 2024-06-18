@@ -1,6 +1,8 @@
 # Low-Level Programming: Hello World
 
 Welcome to the **Hello World** section of the Low-Level Programming repository! This module introduces fundamental programming concepts in C, laying the groundwork for more advanced topics. Whether you're a beginner or refreshing your skills, this guide will help you understand the basics and get started with C programming.
+![Alt text](./image.jpg)
+
 
 ## Table of Contents
 

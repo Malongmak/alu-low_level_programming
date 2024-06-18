@@ -15,28 +15,28 @@ char *argstostr(int ac, char **av)
     if (ac == 0 || av == NULL)
         return (NULL);
 
-    // Calculate total length needed for the concatenated string
+    /* Calculate total length needed for the concatenated string */
     for (i = 0; i < ac; i++)
     {
         for (j = 0; av[i][j]; j++)
             total_length++;
-        total_length++;  // for the newline character
+        total_length++;  /* for the newline character */
     }
-    total_length++;  // for the null terminator
+    total_length++;  /* for the null terminator */
 
-    // Allocate memory for the result string
+    /* Allocate memory for the result string */
     result = malloc(total_length * sizeof(char));
     if (result == NULL)
         return (NULL);
 
-    // Copy each argument into the result string followed by newline
+    /* Copy each argument into the result string followed by newline */
     for (i = 0; i < ac; i++)
     {
         for (j = 0; av[i][j]; j++)
             result[k++] = av[i][j];
         result[k++] = '\n';
     }
-    result[k] = '\0';  // Null-terminate the result string
+    result[k] = '\0';  /* Null-terminate the result string */
 
     return (result);
 }
